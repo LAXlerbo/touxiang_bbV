@@ -1,0 +1,102 @@
+<view class="container data-v-400080d0">
+    <image class="page-bg data-v-400080d0" mode="widthFix" src="/static/image/ui/editor_bg.svg"></image>
+    <view class="data-v-400080d0" wx:if="{{SHOW_TIP}}">
+        <add-tips bind:__l="__l" class="data-v-400080d0" statusBarHeight="{{statusBarHeight}}" vueId="663426c0-1">
+        </add-tips>
+    </view>
+    <!-- //这个小程序由APP比比进行了二次改动 -->
+    <!-- //增加了2021年国庆流行的渐变国旗 -->
+    <!-- //并根据小程序官方要求调整了登录接口 -->
+    <!-- //小程序仅做学习使用 -->
+    <!-- //不可用于任何商业用途 -->
+    <!-- //请勿进行二次售卖等行为 -->
+    <!-- //学习小程序请关注公众号【APP比比】 -->
+    <!-- //你可以搜索小程序【比比小锦囊】查看实际效果 -->
+    <view class="contentwrap" style="width: 100%;">
+        <view class="newtext">
+            <text class="text text12">2</text>
+            <text class="text text11">0</text>
+            <text class="text text10">2</text>
+            <text class="text text9">1</text>
+            <text class="text text8">国</text>
+            <text class="text text7">旗</text>
+            <text class="text text6">渐</text>
+            <text class="text text5">变</text>
+            <text class="text text4">头</text>
+            <text class="text text3">像</text>
+            <text class="text text2">火</text>
+            <text class="text text1">啦</text>
+        </view>
+        <view class="panel assets-container data-v-400080d0">
+            <scroll-view class="assets-scroll-view data-v-400080d0" scrollX="true">
+                <view class="category-list data-v-400080d0" style="display:flex;">
+                    <view class="data-v-400080d0" wx:for="{{categoryList}}" wx:key="index">
+                        <text bindtap="__e"
+                            class="{{['category data-v-400080d0',item.id===currentCategory?'active':'']}}"
+                            data-categroy-id="{{item.id}}"
+                            data-event-opts="{{[ [ 'tap',[ [ 'changeCategory',['$event'] ] ] ] ]}}">{{item.name}}</text>
+                    </view>
+                </view>
+            </scroll-view>
+            <scroll-view class="assets-scroll-view data-v-400080d0" scrollX="true">
+                <view class="{{['assets data-v-400080d0',item.type]}}" wx:for="{{imageList}}" wx:key="index">
+                    <image bindtap="__e" class="data-v-400080d0"
+                        data-event-opts="{{[ [ 'tap',[ [ 'changeAsset',['$event','$0'],[ [ ['imageList','',index] ] ] ] ] ] ]}}"
+                        src="{{'/static/image/'+item.src}}"></image>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="groupmain">
+            <view class="avatar-container data-v-400080d0" id="avatar-container">
+                <image class="avatar-img data-v-400080d0" id="avatar-img" src="{{avatarImage}}"></image>
+                <image class="avatar-frame data-v-400080d0" src="{{frameImage}}" wx:if="{{currentFrame}}"></image>
+                <view class="empty-avatar-view data-v-400080d0" wx:if="{{!avatarImage}}">
+                    <image class="empty-avatar data-v-400080d0" src="/static/image/ui/avatar_empty.svg"></image>
+                </view>
+            </view>
+            <view class="ctlbtn">
+                <button bindtap="__e" class="cu-btn round action-btn small data-v-400080d0"
+                    data-event-opts="{{[ [ 'tap',[ [ 'reset',['$event'] ] ] ] ]}}" id="btn-reset-img"
+                    wx:if="{{avatarImage}}">
+                    <image class="data-v-400080d0" src="/static/image/ui/icon_reset.svg"></image>
+                </button>
+                <button bindtap="__e" class="btn-get-avatar cu-btn round action-btn data-v-400080d0"
+                    data-event-opts="{{[ [ 'tap',[ [ 'getUserInfoCallBack',['$event'] ] ] ] ]}}"
+                    wx:if="{{!avatarImage}}">获取头像</button>
+                <button bindtap="__e" class="cu-btn round action-btn data-v-400080d0"
+                    data-event-opts="{{[ [ 'tap',[ [ 'chooseImage',['$event'] ] ] ] ]}}"
+                    id="btn-choose-img">相册/拍照</button>
+                <button bindtap="__e" class="cu-btn round action-btn btn-primary data-v-400080d0"
+                    data-event-opts="{{[ [ 'tap',[ [ 'draw',['$event'] ] ] ] ]}}" id="btn-save">保存头像</button>
+
+            </view>
+        </view>
+        <view class="data-v-400080d0">
+            <canvas canvasId="canvas" class="canvas data-v-400080d0"></canvas>
+        </view>
+
+        <!-- <view class="ad-container data-v-400080d0">
+            <ad binderror="__e" bindload="__e" class="data-v-400080d0"
+                data-event-opts="{{[ [ 'load',[ [ 'bannerAdLoad',['$event'] ] ] ],[ 'error',[ [ 'bannerAdError',['$event'] ] ] ] ]}}"
+                unitId="adunit-43f7c4189a8e7c35"></ad>
+        </view> -->
+    </view>
+    <view class="{{['cu-modal data-v-400080d0',modalName=='saveTip'?'show':'']}}">
+        <view class="cu-dialog data-v-400080d0">
+            <view class="cu-bar bg-white justify-end data-v-400080d0">
+                <view class="content data-v-400080d0">已保存至相册</view>
+                <view bindtap="__e" class="action data-v-400080d0"
+                    data-event-opts="{{[ [ 'tap',[ [ 'hideModal',['$event'] ] ] ] ]}}">
+                    <text class="cuIcon-close text-red data-v-400080d0"></text>
+                </view>
+            </view>
+            <view class="padding data-v-400080d0">打码机打码机</view>
+            <view class="cu-bar bg-white justify-end data-v-400080d0">
+                <view class="action data-v-400080d0">
+                    <button bindtap="__e" class="cu-btn line-green text-green data-v-400080d0"
+                        data-event-opts="{{[ [ 'tap',[ [ 'hideModal',['$event'] ] ] ] ]}}">我知道了</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
