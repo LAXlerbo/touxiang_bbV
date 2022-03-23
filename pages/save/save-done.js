@@ -41,9 +41,9 @@
                 },
                 onShareAppMessage: function() {
                     return {
-                        title: "国旗渐变头像，2021最新款我刚刚换上了，你也来领取一个吧",
-                        desc: "领取你的国庆头像，为祖国加油",
-                        imageUrl: "/static/image/share_img.png",
+                        title: "虎年订制头像，我刚刚换上，你也来领取一个吧",
+                        desc: "领取你的订制头像，愿新的一年财运虎体",
+                        imageUrl: "/static/image/share_img2.png",
                         path: "/pages/editor/editor",
                         success: function(a) {
                             console.log(a);

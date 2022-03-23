@@ -67,7 +67,7 @@
                                 avatarImage: "",
                                 showBorder: !1,
                                 currentFrame: {'name': '',
-                                    'src': "frame/guoqing/1.png",
+                                    'src': "",
                                     'type': "frame"},
                                 currentCategory: "hot",
                                 isFirstSave: !0,
@@ -94,7 +94,7 @@
                                 });
                             var t = this;
                             wx.createRewardedVideoAd && ((n = wx.createRewardedVideoAd({
-                                adUnitId: "adunit-f537301183781503"
+                                adUnitId: "adunit-ec3870a4aa780a7e"
                             })).onLoad(function () {
                                 t.rewardedVideoAdLoaded = !0;
                             }), n.onError(function (e) {
@@ -124,9 +124,9 @@
                         },
                         onShareAppMessage: function () {
                             return {
-                                title: "@微信官方，给我2021国庆的国旗渐变头像",
-                                desc: "领取你的国庆头像，为祖国加油",
-                                imageUrl: "/static/image/share_img.png",
+                                title: "@节日头像助手，给我2022虎年头像",
+                                desc: "领取你的订制头像",
+                                imageUrl: "/static/image/share_img2.png",
                                 path: "/pages/editor/editor",
                                 success: function (e) {
                                     console.log(e);
@@ -135,9 +135,9 @@
                         },
                         onShareTimeline: function () {
                             return {
-                                title: "@微信官方，给我2021国庆的国旗渐变头像",
-                                desc: "领取你的国庆头像，为祖国加油",
-                                imageUrl: "/static/image/share_img.png",
+                                title: "@节日头像框助手，给我2022新春虎年头像",
+                                desc: "领取你的订制头像",
+                                imageUrl: "/static/image/share_img2.png",
                                 path: "/pages/editor/editor",
                                 success: function (e) {
                                     console.log(e);

@@ -15,44 +15,48 @@ var t = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         }), e.mockAssetsList = e.mockCategoryList = void 0;
         var r = [{
             id: "hot",
-            name: "2021新款"
+            name: "热门"
+        },{
+            id: "hu",
+            name: "财运虎体"
         }, {
             id: "guoqing",
             name: "渐变国旗"
-        }, {
-            id: "qingshuang",
-            name: "清爽国旗"
-        }, {
-            id: "wenzi",
-            name: "红色文字"
-        }, {
-            id: "zhuangtai",
-            name: "状态"
-        }];
+        }, 
+        // {
+        //     id: "wenzi",
+        //     name: "红色文字"
+        // }, {
+        //     id: "zhuangtai",
+        //     name: "状态"
+        // }
+    ];
         e.mockCategoryList = r;
         var o = {
             hot: [{
                 name: "",
-                src: "frame/guoqing/1.png",
+                src: "frame/hu/hat15.png",
                 type: "frame"
-            }, {
+            },{
                 name: "",
-                src: "frame/wenzi/3.png",
+                src: "frame/hu/hat16.png",
                 type: "frame"
-            }, {
+            },{
                 name: "",
-                src: "frame/qingshuang/7.png",
+                src: "frame/hu/hat9.png",
                 type: "frame"
-            }, {
+            },{
                 name: "",
-                src: "frame/qingshuang/1.png",
+                src: "frame/hu/hat11.png",
                 type: "frame"
-            }],
+            }
+        
+        ],
             guoqing: [{
                 name: "",
                 src: "frame/guoqing/1.png",
                 type: "frame"
-            }, {
+            },{
                 name: "",
                 src: "frame/guoqing/2.png",
                 type: "frame"
@@ -84,210 +88,265 @@ var t = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                 name: "",
                 src: "frame/guoqing/9.png",
                 type: "frame"
-            }, {
-                name: "",
-                src: "frame/guoqing/10.png",
-                type: "frame"
             }],
-            qingshuang: [{
+            hu: [{
                 name: "",
-                src: "frame/qingshuang/1.png",
+                src: "frame/hu/hat1.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/2.png",
+                src: "frame/hu/hat2.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/3.png",
+                src: "frame/hu/hat3.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/4.png",
+                src: "frame/hu/hat5.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/5.png",
+                src: "frame/hu/hat6.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/6.png",
+                src: "frame/hu/hat7.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/7.png",
+                src: "frame/hu/hat8.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/8.png",
+                src: "frame/hu/hat9.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/9.png",
+                src: "frame/hu/hat10.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/10.png",
+                src: "frame/hu/hat11.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/11.png",
+                src: "frame/hu/hat12.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/qingshuang/12.png",
-                type: "frame"
-            }],
-            wenzi: [{
-                name: "",
-                src: "frame/wenzi/1.png",
+                src: "frame/hu/hat14.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/wenzi/2.png",
+                src: "frame/hu/hat15.png",
                 type: "frame"
             }, {
                 name: "",
-                src: "frame/wenzi/3.png",
+                src: "frame/hu/hat16.png",
                 type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/4.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/5.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/6.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/7.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/8.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/9.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/10.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/11.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/12.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/13.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/14.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/wenzi/15.png",
-                type: "frame"
-            }],
-            zhuangtai: [{
-                name: "",
-                src: "frame/zhuangtai/1.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/2.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/3.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/4.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/5.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/6.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/7.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/8.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/9.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/10.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/11.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/12.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/13.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/14.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/15.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/16.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/17.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/18.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/19.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/20.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/21.png",
-                type: "frame"
-            }, {
-                name: "",
-                src: "frame/zhuangtai/22.png",
-                type: "frame"
-            }]
+            }
+        
+        ],
+            // qingshuang: [{
+            //     name: "",
+            //     src: "frame/qingshuang/1.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/2.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/3.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/4.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/5.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/6.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/7.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/8.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/9.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/10.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/11.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/qingshuang/12.png",
+            //     type: "frame"
+            // }],
+            // wenzi: [{
+            //     name: "",
+            //     src: "frame/wenzi/1.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/2.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/3.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/4.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/5.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/6.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/7.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/8.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/9.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/10.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/11.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/12.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/13.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/14.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/wenzi/15.png",
+            //     type: "frame"
+            // }],
+            // zhuangtai: [{
+            //     name: "",
+            //     src: "frame/zhuangtai/1.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/2.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/3.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/4.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/5.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/6.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/7.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/8.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/9.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/10.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/11.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/12.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/13.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/14.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/15.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/16.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/17.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/18.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/19.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/20.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/21.png",
+            //     type: "frame"
+            // }, {
+            //     name: "",
+            //     src: "frame/zhuangtai/22.png",
+            //     type: "frame"
+            // }]
         };
         e.mockAssetsList = o;
     },

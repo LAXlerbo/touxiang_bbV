@@ -10,6 +10,7 @@
         <button bindtap="__e" class="cu-btn round action-btn data-v-19ecd09c" data-event-opts="{{[ [ 'tap',[ [ 'makeAgain',['$event'] ] ] ] ]}}" id="btn-choose-img">再来一张</button>
     </view>
     <view class="ad-container data-v-19ecd09c">
-        <ad-custom adIntervals="30" bind:__l="__l" bind:error="__e" bind:load="__e" class="data-v-19ecd09c" data-event-opts="{{[ [ '^load',[ ['adLoad'] ] ],[ '^error',[ ['adError'] ] ] ]}}" unitId="adunit-132e9f3b34769bda" vueId="88dc10a6-1"></ad-custom>
+        <!-- <ad-custom adIntervals="30" bind:__l="__l" bind:error="__e" bind:load="__e" class="data-v-19ecd09c" data-event-opts="{{[ [ '^load',[ ['adLoad'] ] ],[ '^error',[ ['adError'] ] ] ]}}" unitId="adunit-ec3870a4aa780a7e" vueId="88dc10a6-1"></ad-custom> -->
+        <ad unit-id="adunit-f89892f17940fbee" ad-type="video" ad-theme="white"></ad>
     </view>
 </view>
